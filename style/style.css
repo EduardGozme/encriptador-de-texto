@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    /*Colores usados en la pagina web*/
+    --color-primario: #F3F5FC;
+    --color-secundario: #0A3871;
+    --color-terciario: #495057;
+    --color-cuartario: #343A40;
+    --color-boton: #D8DFE8;
+    --color-blanco: #FFFFFF;
+    
+    /*Font-Famlity*/
+    --font-inter: 'Inter', sans-serif;
+}
+
+/*Body*/
+.body__color{
+    background-color: var(--color-primario);
+}
+
+/*Header*/
+.logo__imagen__alura {
+    padding: 2.5rem 0rem 0rem 2.5rem;
+}
+
+/*Main*/
+.container__contenido__main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container__input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.textarea__input {
+    height: 40rem;
+    width: 36rem;
+    background-color: var(--color-primario);
+    font-family: var(--font-inter);
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--color-secundario);
+    border: none;
+    resize: none;
+    outline: none;
+}
+
+.container__requisitos{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.container__requisitos img{
+    padding: 8px;
+}
+.container__requisitos p {
+    font-family: var(--font-inter);
+    font-weight: 400;
+    font-size: 0.75rem;
+    color: #495057;
+}
+
+/*Main resultado*/
+.container__resultado{
+    height: 52rem;
+    width: 25rem;
+    background-color: var(--color-blanco);
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/*Main resultado imagen*/
+.imagen__resultado {
+    width: 21rem;
+    height: 19rem;
+    padding-bottom: 2rem;
+}
+/*Main resultado texto*/
+.resultado__mensaje {
+    font-family: var(--font-inter);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 120%;
+    height: 3.6rem;
+    width: 21rem;
+    text-align: center;
+}
+.resultado__texto {
+    font-family: var(--font-inter);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 150%;
+    color: var(--color-terciario);
+    width: 21rem;
+    max-height: 20rem;
+    overflow-y: auto; 
+    text-align: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    word-wrap: break-word; 
+}
+
+.nuevo__estilo {
+    height: 52rem;
+    width: 25rem;
+    background-color: var(--color-blanco);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/*Botones*/
+.boton__accion{
+    width: 20.5rem;
+    height: 4.18rem;
+    border-radius: 24px;
+    border: 2px solid var(--color-secundario);
+    font-family: var(--font-inter);
+    font-size: 1rem;
+    background-color: var(--color-boton);
+    color: var(--color-secundario);
+}
+.boton__accion:hover {
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container__header {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo__imagen__alura {
+        padding: 1.5rem;
+    }
+    .container__contenido__main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container__input {
+        padding: 5rem;
+    }
+    .textarea__input {
+        text-align: center;
+        height: 20rem;
+        width: 100%;
+        font-size: 1rem;
+    }
+    .container__requisitos {
+        justify-content: center;
+    }
+    .botones__acciones {
+        display: flex;
+        flex-direction: column;
+    }
+    .imagen__resultado {
+        display: none;
+    }
+    .container__resultado {
+        height: 25rem;
+        width: auto;
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 992px){
+    .container__header {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo__imagen__alura {
+        padding: 1.5rem;
+    }
+    .container__contenido__main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container__input {
+        padding: 5rem;
+    }
+    .textarea__input {
+        text-align: center;
+        height: 20rem;
+        width: 100%;
+        font-size: 1rem;
+    }
+    .container__requisitos {
+        justify-content: center;
+    }
+    .botones__acciones {
+        display: flex;
+        flex-direction: column;
+    }
+    .imagen__resultado {
+        display: none;
+    }
+    .container__resultado {
+        height: auto;
+        width: auto;
+    }
+
+}
+@media only screen and (min-width: 993px) and (max-width: 1400px){
+    .boton__accion{
+        width: 10rem;
+    }
+}
